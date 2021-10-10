@@ -20,6 +20,7 @@ public class Timer : MonoBehaviour
         {
             // Count 0일때 동작할 함수 삽입
             timerTxt.text = "";
+            
         }
         else
         {
