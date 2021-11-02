@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class NewBehaviourScript : MonoBehaviour
+public class SceneChange : MonoBehaviour
 {
     int sceneIndex;
     // Start is called before the first frame update
@@ -18,10 +18,16 @@ public class NewBehaviourScript : MonoBehaviour
         
     }
 
-    public void OnClickNewGame()
+    public void OnClickChoice()
     {
         Debug.Log("시작하기");
-        SceneManager.LoadScene(sceneIndex + 1);
+        SceneManager.LoadScene("Scene_Select");
+    }
+
+    public void OnClickPlay()
+    {
+        Debug.Log("캐릭터 선택 완료 및 게임 시작");
+        SceneManager.LoadScene("Scene_Start");
     }
 
     public void OnClickLoad()
@@ -32,7 +38,13 @@ public class NewBehaviourScript : MonoBehaviour
     public void OnClickInfo()
     {
         Debug.Log("개발자 정보");
-        SceneManager.LoadScene(sceneIndex + 2);
+        SceneManager.LoadScene("Scene_imformation");
+    }
+
+    public void OnClickInfoBack()
+    {
+        Debug.Log("돌아가기");
+        SceneManager.LoadScene("Scene_MainMenu");
     }
 
 }
