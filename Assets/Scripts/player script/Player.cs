@@ -9,12 +9,7 @@ public class Player : MonoBehaviour
     public bool isTouchBottom;
     public bool isTouchLeft;
     public bool isTouchRight;
-    public int count;
 
-    void Start()
-    {
-        Invoke("OnDisable", 5.0f);
-    }
     void Update()
     {
         float h = Input.GetAxisRaw("Horizontal"); //수평
@@ -30,7 +25,7 @@ public class Player : MonoBehaviour
 
         transform.position = curPos + nextPos;
     }
-    
+
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Border")
@@ -51,37 +46,8 @@ public class Player : MonoBehaviour
                     break;
             }
         }
-        else if (collision.gameObject.tag == "item")
-        {
-            collision.gameObject.SetActive(false);
-            
+    }
 
-            if (collision.gameObject.name == "커피")
-            { 
-                Score.count += 5;
-            }
-            else if (collision.gameObject.name == "계산기")
-            {
-                Score.count += 5;
-            }
-            else if (collision.gameObject.name == "게임")
-            {
-                Score.count -= 5;
-            }
-            else if (collision.gameObject.name == "탈주")
-            {
-                Score.count -= 5;
-            }
-            else if (collision.gameObject.name == "휴대폰")
-            {
-                Score.count -= 5;
-            }
-        }
-    }
-    void OnDisable()
-    {
-        gameObject.SetActive(true);
-    }
     void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Border")
