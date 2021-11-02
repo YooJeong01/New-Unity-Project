@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 492916720}
   - component: {fileID: 492916719}
   - component: {fileID: 492916723}
+  - component: {fileID: 492916722}
   m_Layer: 0
   m_Name: Hensel
   m_TagString: Untagged
@@ -226,6 +227,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &492916722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 492916718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5886de3e3cd3e7148ab8054f0bc4b201, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  character: 0
+  chars: []
 --- !u!61 &492916723
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -475,6 +490,7 @@ GameObject:
   - component: {fileID: 1099714124}
   - component: {fileID: 1099714123}
   - component: {fileID: 1099714122}
+  - component: {fileID: 1099714126}
   - component: {fileID: 1099714125}
   m_Layer: 0
   m_Name: Gretel
@@ -580,9 +596,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   character: 1
-  chars:
-  - {fileID: 0}
-  - {fileID: 1099714125}
+  chars: []
+--- !u!61 &1099714126
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1099714121}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.6, y: 6.8969126}
+    newSize: {x: 5.6842103, y: 6.7578945}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.6, y: 6.8969126}
+  m_EdgeRadius: 0
 --- !u!1 &1260650251
 GameObject:
   m_ObjectHideFlags: 0
