@@ -19,7 +19,7 @@ public class itemscrollerr : MonoBehaviour
     {
         for (int i = 0; i < tiles.Length; i++)
         {
-            if (-5 >= tiles[i].transform.position.x)
+            if (-10 >= tiles[i].transform.position.x)
             {
 
                 for (int q = 0; q < tiles.Length; q++)
