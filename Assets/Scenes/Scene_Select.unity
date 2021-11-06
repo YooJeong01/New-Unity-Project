@@ -240,7 +240,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   character: 0
+<<<<<<< Updated upstream
   chars: []
+=======
+  chars:
+  - {fileID: 492916722}
+  - {fileID: 1099714125}
+>>>>>>> Stashed changes
 --- !u!61 &492916723
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -596,7 +602,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   character: 1
+<<<<<<< Updated upstream
   chars: []
+=======
+  chars:
+  - {fileID: 492916722}
+  - {fileID: 1099714125}
+>>>>>>> Stashed changes
 --- !u!61 &1099714126
 BoxCollider2D:
   m_ObjectHideFlags: 0
