@@ -113,11 +113,9 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: run
   m_Name: idle
   m_Speed: 1
   m_CycleOffset: 0
-  m_Transitions: []
   m_Transitions:
   - {fileID: 5723398591854819554}
   m_StateMachineBehaviours: []
