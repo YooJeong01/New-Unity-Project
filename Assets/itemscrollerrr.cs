@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class itemscrollerrr : MonoBehaviour
 {
-    public SpriteRenderer[] tiles;
-    public Sprite[] groundImg;
+    public GameObject[] tiles;
+   // public Sprite[] groundImg;
     public float speed;
 
     // Start is called before the first frame update
@@ -13,7 +13,7 @@ public class itemscrollerrr : MonoBehaviour
     {
         temp = tiles[0];
     }
-    SpriteRenderer temp;
+    GameObject temp;
     // Update is called once per frame
     void Update()
     {
@@ -21,14 +21,15 @@ public class itemscrollerrr : MonoBehaviour
         {
            if (-10 >= tiles[i].transform.position.x)
             {
-
+                 tiles[i].SetActive(true);
                 for (int q = 0; q < tiles.Length; q++)
                 {
                     if (temp.transform.position.x < tiles[q].transform.position.x)
                         temp = tiles[q];
+                    
                 }
                 tiles[i].transform.position = new Vector2(temp.transform.position.x + 13, -4.5f);
-                tiles[i].sprite = groundImg[Random.Range(0, groundImg.Length)];
+               // tiles[i].sprite = groundImg[Random.Range(0, groundImg.Length)];
             }
         }
 
