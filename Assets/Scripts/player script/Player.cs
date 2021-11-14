@@ -54,6 +54,7 @@ public class Player : MonoBehaviour
         else if (collision.gameObject.tag == "item")
         {
             collision.gameObject.SetActive(false);
+            
 
             if (collision.gameObject.name == "Ä¿ÇÇ")
             { 
