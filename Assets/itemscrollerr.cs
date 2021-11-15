@@ -5,7 +5,7 @@ using UnityEngine;
 public class itemscrollerr : MonoBehaviour
 {
     public GameObject[] tiles;
-    //public Sprite[] groundImg;
+    public Sprite[] groundImg;
     public float speed;
 
     // Start is called before the first frame update
@@ -26,10 +26,9 @@ public class itemscrollerr : MonoBehaviour
                 {
                     if (temp.transform.position.x < tiles[q].transform.position.x)
                         temp = tiles[q];
-                    
                 }
                 tiles[i].transform.position = new Vector2(temp.transform.position.x + 18, -3);
-                //tiles[i].sprite = groundImg[Random.Range(0, groundImg.Length)];
+               // tiles[i].sprite = groundImg[Random.Range(0, groundImg.Length)];
             }
         }
 
