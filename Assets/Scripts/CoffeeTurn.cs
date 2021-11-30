@@ -14,6 +14,7 @@ public class CoffeeTurn : MonoBehaviour
     }
     private void Update()
     {
+        target = transform.position;
         mouse = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         angle = Mathf.Atan2(mouse.y - target.y, mouse.x - target.x) * Mathf.Rad2Deg;
         this.transform.rotation = Quaternion.AngleAxis(angle - 90, Vector3.forward);
