@@ -9,7 +9,9 @@ public class ReSpawn : MonoBehaviour
 
     void Start()
     {
+        player = (charPrefabs[(int)DataMgr.instance.currentCharacter]);
         player = Instantiate(charPrefabs[(int)DataMgr.instance.currentCharacter]);
         player.transform.position = transform.position;
+
     }
 }
