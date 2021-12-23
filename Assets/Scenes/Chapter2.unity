@@ -1820,8 +1820,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 233b9945079e540488ac63dce457a304, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  character:
+  target:
   - {fileID: 1523222981}
   - {fileID: 1648305346}
   positionX: 0

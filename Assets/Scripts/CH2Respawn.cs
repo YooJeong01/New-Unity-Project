@@ -15,8 +15,8 @@ public class CH2Respawn : MonoBehaviour
     void Update()
     {
 
-      //  if(DataMgr.instance.currentCharacter == 0)
-      if(1==0)
+      if(DataMgr.instance.currentCharacter == 0)
+      
         {
             charPrefabs[0].SetActive(true);
             charPrefabs[1].SetActive(false);
