@@ -47,4 +47,11 @@ public class SceneChange : MonoBehaviour
         SceneManager.LoadScene("Scene_MainMenu");
     }
 
+    public void OnClickBack()
+    {
+        Debug.Log("챕터3 플레이 화면으로 돌아가기");
+        SceneManager.LoadScene("Chapter3");
+    }
+
+
 }

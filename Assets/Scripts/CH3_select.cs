@@ -23,5 +23,10 @@ public class CH3_select : MonoBehaviour
         Debug.Log("노트북 누름");
         SceneManager.LoadScene("CH3_assign");
     }
+    public void OnClickSafe()
+    {
+        Debug.Log("금고 열기");
+        SceneManager.LoadScene("CH3_safe");
+    }
 
 }
