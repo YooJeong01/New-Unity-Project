@@ -26,7 +26,7 @@ public class DigitalDisplay : MonoBehaviour
 
         for(int i = 0; i <= characters.Length - 1; i++)
         {
-            characters[i].sprite = digits[9];
+            characters[i].sprite = digits[10];
         }
         PushTheButton.ButtonPressed += AddDigitToCodeSequence;
     }
@@ -37,48 +37,56 @@ public class DigitalDisplay : MonoBehaviour
         {
             switch (digitEntered)
             {
-                case "One":
+                case "Zero":
                     codeSequence += "0";
                     DisplayCodeSequence(0);
                     break;
-                case "Two":
+                case "One":
                     codeSequence += "1";
                     DisplayCodeSequence(1);
                     break;
-                case "Three":
+                case "Two":
                     codeSequence += "2";
                     DisplayCodeSequence(2);
                     break;
-                case "Four":
+                case "Three":
                     codeSequence += "3";
                     DisplayCodeSequence(3);
                     break;
-                case "Five":
+                case "Four":
                     codeSequence += "4";
                     DisplayCodeSequence(4);
                     break;
-                case "Six":
+                case "Five":
                     codeSequence += "5";
                     DisplayCodeSequence(5);
                     break;
-                case "Seven":
+                case "Six":
                     codeSequence += "6";
                     DisplayCodeSequence(6);
                     break;
-                case "Eight":
+                case "Seven":
                     codeSequence += "7";
                     DisplayCodeSequence(7);
                     break;
-                case "Nine":
+                case "Eight":
                     codeSequence += "8";
                     DisplayCodeSequence(8);
+                    break;
+                case "Nine":
+                    codeSequence += "9";
+                    DisplayCodeSequence(9);
                     break;
             }
         }
 
         switch (digitEntered)
         {
-            case "enter":
+            case "Star":
+                ResetDisplay();
+                break;
+                
+            case "Hash":
                 if (codeSequence.Length > 0)
                 {
                     CheckResults();
@@ -92,19 +100,19 @@ public class DigitalDisplay : MonoBehaviour
         switch (codeSequence.Length)
         {
             case 1:
-                characters[0].sprite = digits[9];
-                characters[1].sprite = digits[9];
-                characters[2].sprite = digits[9];
+                characters[0].sprite = digits[10];
+                characters[1].sprite = digits[10];
+                characters[2].sprite = digits[10];
                 characters[3].sprite = digits[digitJustEntered];
                 break;
             case 2:
-                characters[0].sprite = digits[9];
-                characters[1].sprite = digits[9];
+                characters[0].sprite = digits[10];
+                characters[1].sprite = digits[10];
                 characters[2].sprite = characters[3].sprite;
                 characters[3].sprite = digits[digitJustEntered];
                 break;
             case 3:
-                characters[0].sprite = digits[9];
+                characters[0].sprite = digits[10];
                 characters[1].sprite = characters[2].sprite;
                 characters[2].sprite = characters[3].sprite;
                 characters[3].sprite = digits[digitJustEntered];
@@ -145,7 +153,7 @@ public class DigitalDisplay : MonoBehaviour
     {
         for(int i = 0; i <= characters.Length - 1; i++)
         {
-            characters[i].sprite = digits[9];
+            characters[i].sprite = digits[10];
         }
         codeSequence = "";
     }

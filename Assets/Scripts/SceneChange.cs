@@ -54,5 +54,11 @@ public class SceneChange : MonoBehaviour
         SceneManager.LoadScene("Chapter3");
     }
 
+    public void OnClickNextCH3()
+    {
+        Debug.Log("√©≈Õ3 ¿¸»Ø");
+        SceneManager.LoadScene("Chapter3");
+    }
+
 
 }
