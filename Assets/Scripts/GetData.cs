@@ -6,9 +6,11 @@ using UnityEngine.SceneManagement;
 
 public class GetData : MonoBehaviour
 {
+    public static bool isDataOptain = false;
     public void OnClickData()
     {
         Debug.Log("ÀÚ·á È¹µæ");
+        isDataOptain = true;
         SceneManager.LoadScene("Chapter3");
     }
 }

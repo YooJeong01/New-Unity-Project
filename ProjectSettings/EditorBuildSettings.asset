@@ -35,4 +35,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CH3_safein.unity
     guid: bc451b62008f57c44b6d9fb9dd4bf249
+  - enabled: 1
+    path: Assets/Scenes/CH3_door.unity
+    guid: e7f91c78e29a11e43a41ef490151e340
+  - enabled: 1
+    path: Assets/Scenes/CH3_fire.unity
+    guid: f0e17524268c09b498d67ac152787463
   m_configObjects: {}
