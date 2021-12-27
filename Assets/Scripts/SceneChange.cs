@@ -23,10 +23,11 @@ public class SceneChange : MonoBehaviour
         Debug.Log("시작하기");
         SceneManager.LoadScene("Scene_Select");
     }
-
+    
     public void OnClickPlay()
     {
         Debug.Log("캐릭터 선택 완료 및 게임 시작");
+        
         SceneManager.LoadScene("Scene_Start");
     }
 

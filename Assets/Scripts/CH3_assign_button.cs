@@ -25,4 +25,9 @@ public class CH3_assign_button : MonoBehaviour
         Debug.Log("엑스버튼 누름");
         SceneManager.LoadScene("Chapter3");
     }
+    public void OnClickX__Button()
+    {
+        Debug.Log("엑스버튼 누름");
+        SceneManager.LoadScene("Chapter3");
+    }
 }

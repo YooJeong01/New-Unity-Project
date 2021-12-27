@@ -28,5 +28,14 @@ public class CH3_select : MonoBehaviour
         Debug.Log("금고 열기");
         SceneManager.LoadScene("CH3_safe");
     }
-
+    public void OnClickburn()
+    {
+        Debug.Log("자료 태우기(화덕 클릭)");
+        SceneManager.LoadScene("CH3_burn");
+    }
+    public void OnClickclear()
+    {
+        Debug.Log("연구실 탈출");
+        SceneManager.LoadScene("clear");
+    }
 }

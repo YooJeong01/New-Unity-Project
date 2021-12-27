@@ -10,6 +10,7 @@ public enum Character
 public class DataMgr : MonoBehaviour
 {
     public static DataMgr instance;
+    public Character currentCharacter;
     private void Awake()
     {
         if (instance == null) instance = this;
@@ -17,7 +18,8 @@ public class DataMgr : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    public Character currentCharacter;
+   
+    
 
 
 
