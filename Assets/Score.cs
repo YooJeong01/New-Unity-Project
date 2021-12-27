@@ -11,6 +11,8 @@ public class Score : MonoBehaviour
     Text text;
     public static int count;
     public GameObject[] score;
+    public GameObject cartoon2;
+    int isClear = 0;
     void Start()
     {
         text = GetComponent<Text>();    
@@ -19,12 +21,17 @@ public class Score : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(isClear==1)
+            if (Input.GetMouseButtonDown(0))
+                SceneManager.LoadScene("Chapter2");
         text.text = count.ToString();
         if(count>=100)
         {
             score[0].SetActive(true);
             score[1].SetActive(false);
-            SceneManager.LoadScene("Chapter2");
+            cartoon2.SetActive(true);
+            isClear = 1;
+            //SceneManager.LoadScene("Chapter2");
         }
         else if(count>=85)
         {
