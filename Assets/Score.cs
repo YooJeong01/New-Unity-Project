@@ -21,15 +21,18 @@ public class Score : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(isClear==1)
+        if (isClear == 1)
+        {
             if (Input.GetMouseButtonDown(0))
                 SceneManager.LoadScene("Chapter2");
+        }
         text.text = count.ToString();
         if(count>=100)
         {
-            score[0].SetActive(true);
+            score[0].SetActive(false);
             score[1].SetActive(false);
             cartoon2.SetActive(true);
+            count += 500;
             isClear = 1;
             //SceneManager.LoadScene("Chapter2");
         }
